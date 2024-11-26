@@ -1,0 +1,466 @@
+/* Styles for Project2 Wireframe */
+/* November 10, 2024             */
+
+html{
+/*    background-color: #DDD0C8; */
+    background-color: #ede1d5;
+    font-family: Arial;
+}
+
+body{
+    position: relative;
+    margin: auto;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+h3{
+    margin-left: 1.5em;
+}
+
+h5{
+    display: inline;
+    margin-left: 0.1em;
+}
+
+footer{
+    position: absolute;
+    bottom: 1.3em;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-size: 0.6em;
+    color: black;
+}
+
+
+/* Banner (color bar) */
+
+#banner{
+    background:#bc6c25;
+    height: 3em;
+    width: 100%;
+}
+
+
+/* Navigation bar for regular-sized screens */
+
+#ZionSticker{
+    position: absolute;
+    top: 0;
+    width: 3.2em;
+}
+
+#ZionSticker:hover, #ZionSticker:focus{
+    border: 0.1em solid black;
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    background-color: #bc6c25;
+/*    background-color: rgba(144, 78, 3, 0.932); */
+/* If I want to make the navbar sticky:
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+*/ 
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    line-height: 3em;
+    margin: 0;
+    padding-left: 4.5em;
+    width: 100%;
+/*    background-color: rgba(144, 78, 3, 0.932); */
+/*    overflow: hidden; */
+}
+
+nav ul a li{
+    display: inline;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+/*    color: white; */
+    color:  #e5e5e5;
+    width: 100%;
+/*    text-align: center; */
+}
+
+nav li:hover, li:focus{
+/*    background-color: black; */
+    background-color: #273617;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Menu button and dropdown menu for mobile screens */
+
+.hamburger-menu-button{
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0.6em;
+    right: 1.5em;
+}
+
+.hamburger-menu-button span{
+    display: none;  /* Hide the hamburger button while screen width sufficient */
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.drop-down-menu{
+    position: fixed;
+    height: auto;
+    width: auto;
+    padding-top: 0px;
+    margin: 0;
+    right: -6.5em;   /* Hide the drop-down menu */
+    background-color: #bc6c25;
+    transition: left 0.2s linear;
+    z-index: 2;
+}
+
+.drop-down-menu ul{
+    list-style-type: none;
+    line-height: 2em;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.drop-down-menu ul a li{
+    align-items: center;
+    color: #e5e5e5;
+}
+
+.drop-down-menu li:hover, li:focus{
+    background-color: #273617;
+}
+
+#checkbox-toggle{   /* default is 'unchecked' */
+    display: none;  /* keep the checkbox hidden under the hamburger menu icon */
+    position: absolute;
+    top: 1.0em;
+    right: 1.8em;   /* right edge of the screen */
+    z-index: 1;     /* place the checkbox in front */
+    accent-color: green;
+    transition: left 0.2s linear;
+}
+
+/* When checkbox is 'checked", entire navigation drawer is     */
+/* shown (expanded) and the checkbox is shown inside the right */
+/* edge of the navigation drawer.                              */ 
+
+#checkbox-toggle:checked{
+    display: inline; /* temporarily show the check mark */
+    right: 2.0em;    /* aligned with the hamburger menu button */
+}
+
+/* Navigation drawer next to active checkbox that indicates it is open */
+/* Set the width and make the navigation drawer flush with the edge    */
+/* of the window. */
+
+#checkbox-toggle:checked ~ .drop-down-menu{
+    width: 8em;
+    right: 0.5em;
+}
+
+
+
+
+/* ------------------------ OLD CODE ------------------- */
+
+#Hamburger{
+    position: absolute;
+    top: -0.3em;
+    right: 1em;
+    width: 2.2em;
+}
+
+/* Dropdown menu button, initially hidden */
+.dropdown-button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(144, 78, 3, 0.932);
+    min-width: 8em;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    color:  #e5e5e5;
+    padding: 0.8em;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: black}
+  
+/* Show the dropdown menu on hover */
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+
+/* ------------------ END OLD CODE ------------------------/
+
+
+
+
+
+/* Landing page */
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 4em;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* History page */
+
+#history-grid-container{
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "main-text   photo";
+    grid-template-columns:  2fr 1fr;
+    column-gap: 2em;
+    row-gap: 1em;
+    height: 100%;
+    width: 80vw;
+    background-color: none;
+}
+
+#history-article{
+    grid-area: main-text;
+    border-left: 0.4em solid rgba(95,108,55,255); /* green */
+    border-top: 0.2em solid rgba(95,108,55,255); /* green */
+    border-radius: 0.4em;
+    /*    border-left: 6px solid #273617;   dark green */
+    height: auto;
+  
+}
+
+#history-article p{
+    padding-top: 0;
+    padding-left: 1.5em;
+}
+
+.cite{
+    font-size: 0.80em;
+}
+
+#history-image-container{
+    grid-area: photo;
+    display: grid;
+    align-self: start;
+    place-items: center;
+}
+
+.history-image{
+    margin-top: 1.1em;
+    width: 13em;
+    object-fit: scale-down;
+}
+
+.italicize-only{
+    font-style: italic;
+}
+
+
+/* General Info, Sites, Things To Do, and Wildlife pages */
+
+.card-container{
+    position: relative;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+    width: 80vw;
+    height: 100vh;
+}
+
+.card{
+    border-left: 0.25em solid rgba(95,108,55,255); /* green */
+    border-top: 0.15em solid rgba(95,108,55,255);
+    border-radius: 0.25em;
+  /*  padding: 0.1em; */
+    background-color: #e5e5e5;
+/*  grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); */
+/*  dark green color
+    background-color: rgb(42, 83, 42);
+*/
+}
+
+.card-pic{
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-content p{
+    font-size: 0.8em;
+    margin: 0.3em;
+}
+
+
+/* Responsiveness yet to be implemented: */
+
+/* When necessary, switch to two-column layout for card pages
+@media( min-width: 800px ) and ( max-width: 1200px ) {
+    .card-container{
+        position: relative;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 1.5rem;
+        column-gap: 1rem;
+        width: 85vw;
+        height: 100vh;
+    }
+}
+*/
+
+/* For even narrower screen width, switch to one-column layout */
+
+@media( max-width: 800px ) {
+    .card-container{
+        position: relative;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 1.5rem;
+        column-gap: 1rem;
+        width: 90vw;
+        height: 100vh;
+    }
+
+    #history-grid-container{
+        position: relative;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+            "main-text"   
+            "photo";
+        grid-template-columns: 1fr;
+        column-gap: 2em;
+        row-gap: 1em;
+        height: 100%;
+        width: 90vw;
+        background-color: none;
+    }
+
+    nav ul a li{
+        display: none;
+    }
+    
+    .hamburger-menu-button span{
+        display: block;  
+    }
+}
+
+/* OLD CODE ---------------------------------------------------- */
+/* For even narrower screen width, switch to one-column layout 
+@media( max-width: 800px ) {
+    .card-container{
+        position: relative;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 1.5rem;
+        column-gap: 1rem;
+        width: 90vw;
+        height: 100vh;
+    }
+
+    #history-grid-container{
+        position: relative;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+            "main-text"   
+            "photo";
+        grid-template-columns: 1fr;
+        column-gap: 2em;
+        row-gap: 1em;
+        height: 100%;
+        width: 90vw;
+        background-color: none;
+    }
+}
+*/
+
+    /* hide the horizontal nav bar */
+ /*
+    nav ul a li{
+        display: none;
+    }
+*/
+    /* show the previously-hidden dropdown button */
+ /*   
+    .dropdown-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+ ---------------------------  OLD CODE ------------------------ */
