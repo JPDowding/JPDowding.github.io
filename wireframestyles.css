@@ -370,7 +370,7 @@ a{
 /* appropriate for standard printer paper. No need to include 
 /* navbar or footer in the print-out. */
 @media print {
-    html, #history-grid-container, .card-container {
+    html, #history-grid-container, .card {
         background-color: white;
     }
     #banner{
@@ -380,9 +380,6 @@ a{
         display: none;
     }
     .hamburger-menu-button span{
-        display: none;
-        
-    footer{
         display: none;
     }
     @page {
