@@ -2,7 +2,6 @@
 /* December 6, 2024              */
 
 html{
-/*    background-color: #DDD0C8; */
     background-color: #ede1d5;
     font-family: Arial;
     height: 100%;
@@ -33,7 +32,6 @@ footer{
     left: 0;
     bottom: 1.5em;
     width: 100%;
-/*    z-index: 1; */
     text-align: center;
     font-size: 0.6em;
     color: black;
@@ -72,13 +70,6 @@ nav{
     top: 0;
     align-items: center;
     background-color: #bc6c25;
-/*    background-color: rgba(144, 78, 3, 0.932); */
-/* If I want to make the navbar sticky:
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    z-index: 2;
-*/ 
 }
 
 nav ul{
@@ -88,8 +79,6 @@ nav ul{
     margin: 0;
     padding-left: 4.5em;
     width: 100%;
-/*    background-color: rgba(144, 78, 3, 0.932); */
-/*    overflow: hidden; */
 }
 
 nav ul a li{
@@ -98,14 +87,11 @@ nav ul a li{
     padding-bottom: 0.5em;
     padding-left: 1.0em;
     padding-right: 1.0em;
-/*    color: white; */
     color:  #e5e5e5;
     width: 100%;
-/*    text-align: center; */
 }
 
 nav li:hover, li:focus{
-/*    background-color: black; */
     background-color: #273617;
 }
 
@@ -183,12 +169,12 @@ a{
 /* shown (expanded)                                         */      
 
 #checkbox-toggle:checked{
-    display: inline; /* temporarily show the check mark */
+    display: none;   /* hide the check mark */
     right: 2.0em;    /* aligned with the hamburger menu button */
 }
 
-/* Drop-down navigation menu next to active checkbox   */
-/* Set the width and set the menu just inside the edge */
+/* Drop-down navigation menu next to active checkbox    */
+/* Set the width, and set the menu just inside the edge */
 /* of the window. */
 
 #checkbox-toggle:checked ~ .drop-down-menu{
@@ -240,9 +226,8 @@ a{
 #history-article{
     grid-area: main-text;
     border-left: 0.4em solid rgba(95,108,55,255); /* green */
-    border-top: 0.2em solid rgba(95,108,55,255); /* green */
+    border-top: 0.2em solid rgba(95,108,55,255);  /* green */
     border-radius: 0.4em;
-    /*    border-left: 6px solid #273617;   dark green */
     height: auto;
   
 }
@@ -287,14 +272,9 @@ a{
 
 .card{
     border-left: 0.25em solid rgba(95,108,55,255); /* green */
-    border-top: 0.15em solid rgba(95,108,55,255);
+    border-top: 0.15em solid rgba(95,108,55,255);  /* green */
     border-radius: 0.25em;
-  /*  padding: 0.1em; */
     background-color: #e5e5e5;
-/*  grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); */
-/*  dark green color
-    background-color: rgb(42, 83, 42);
-*/
 }
 
 .card-pic{
