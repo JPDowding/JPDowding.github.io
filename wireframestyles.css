@@ -1,12 +1,12 @@
-/* Styles for Project2 Wireframe */
-/* November 10, 2024             */
+/* Styles for Project2 Final     */
+/* December 6, 2024              */
 
 html{
 /*    background-color: #DDD0C8; */
     background-color: #ede1d5;
     font-family: Arial;
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
     box-sizing: border-box;
 }
 
@@ -373,14 +373,27 @@ a{
         background-color: none;
     }
 
+/*
+    #banner{
+        position: sticky;
+        top: 0;
+        z-index: 4;
+    }
+*/
 
     /* hide the horizontal navbar elements */
+
+    #ZionSticker{
+        display: none;
+    }
     nav ul a li{
         display: none;
     }
     
+
     /* show the previously-hidden hamburger button */
+
     .hamburger-menu-button span{
-        display: block;  
+        display: block;
     }
 }
