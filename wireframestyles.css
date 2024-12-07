@@ -39,23 +39,6 @@ footer{
     color: black;
 }
 
-/*
-footer{
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 30px;
-    z-index: 1;
-    text-align: center;
-    font-size: 0.6em;
-    color: black;
-}
-*/
-
 
 .important-text{
     text-decoration: underline;
@@ -160,12 +143,13 @@ a{
     position: fixed;
     height: auto;
     width: auto;
-    padding-top: 0px;
+    padding-top: 2.2em;
+    padding-bottom: 1.0em;
     margin: 0;
     right: -6.5em;   /* Hide the drop-down menu */
     background-color: #bc6c25;
     transition: left 0.2s linear;
-    z-index: 2;
+    z-index: 5;
 }
 
 .drop-down-menu ul{
@@ -373,13 +357,14 @@ a{
         background-color: none;
     }
 
-/*
+
+    /* fix the colored banner to the top of the page */
+
     #banner{
-        position: sticky;
+        position: fixed;
         top: 0;
-        z-index: 4;
+        z-index: 5;
     }
-*/
 
     /* hide the horizontal navbar elements */
 
@@ -390,9 +375,12 @@ a{
         display: none;
     }
     
-
     /* show the previously-hidden hamburger button */
 
+    .hamburger-menu-button{
+        position: fixed;
+        z-index: 10;
+    }
     .hamburger-menu-button span{
         display: block;
     }
