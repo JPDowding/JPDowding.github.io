@@ -365,3 +365,27 @@ a{
         display: block;
     }
 }
+
+/* If sending to a printer, adjust colors and create layout 
+/* appropriate for standard printer paper. No need to include 
+/* navbar or footer in the print-out. */
+@media print {
+    html, #history-grid-container, .card-container {
+        background-color: white;
+    }
+    #banner{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger-menu-button span{
+        display: none;
+        
+    footer{
+        display: none;
+    }
+    @page {
+        margin: 11in;
+    }
+}
