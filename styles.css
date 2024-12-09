@@ -1,11 +1,10 @@
-/* Styles for Project2 Final     */
-/* December 8, 2024              */
+/* Styles for Project2 Final */
+/* December 8, 2024          */
 
 html{
     background-color: #ede1d5;
     font-family: Arial;
     height: 100%;
-    overflow-x: clip;
     box-sizing: border-box;
 }
 
@@ -40,7 +39,6 @@ footer{
     font-size: 0.6em;
     color: black;
 }
-
 
 .important-text{
     text-decoration: underline;
@@ -107,6 +105,16 @@ a{
     text-decoration: underline;
 }
 
+
+/* Title of the page only needed for mobile screens, so hide for now */
+
+.mobile-title{
+    display: none;
+    color:  #e5e5e5;
+    margin-left: 1.5em;
+    z-index: 6;
+}
+   
 
 /* Menu button and dropdown menu for mobile screens */
 
@@ -348,6 +356,12 @@ a{
         position: fixed;
         top: 0;
         z-index: 5;
+    }
+
+    /* show the title of the page on top of the banner */
+
+    .mobile-title{
+        display: inline-block;
     }
 
     /* hide the horizontal navbar elements */
