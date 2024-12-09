@@ -5,6 +5,7 @@ html{
     background-color: #ede1d5;
     font-family: Arial;
     height: 100%;
+    overflow-x: clip;
     box-sizing: border-box;
 }
 
